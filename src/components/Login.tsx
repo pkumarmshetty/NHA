@@ -1,0 +1,23 @@
+"use client";
+// import { signIn } from "next-auth/react";
+import NavBar from "@/components/Navbar";
+import Banner from "@/components/Banner";
+import About from "@/components/About";
+import NhaCards from "@/components/NhaCards";
+import Footer from "@/components/Footer";
+import {  Button } from '@mui/material';
+import { signIn } from "next-auth/react";
+export default function Login() {
+  let button = (<Button color="inherit" variant="outlined" onClick={() => signIn("keycloak")}>
+  Signin with keycloak
+</Button> )
+  return (
+    <>
+      <NavBar name={'NHA'} button={button} />
+      <Banner />
+      <About /> 
+      <NhaCards/>
+      <Footer />
+    </>
+  );
+}
