@@ -165,19 +165,24 @@ function page() {
   // Function to handle form submission
   const router = useRouter();
    const handleSubmit =async ({ formData }) => {
-    console.log("Form Data Submitted:", formData);
-  let responce= await fetch("https://demofr1.dpgongcp.com/registry/api/v1/Insurance/search",{
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify(formData),
-    })
-    if(responce.status===200){
-      router.push("/dashboard")
+    try {
+      const res = await fetch('/api/handleform',{
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'content-type': 'application/json'
+        }
+      })
+      console.log(res)
+      if(res.ok){
+        router.push("/dashboard")
+      }else{
+        console.log("Oops! Something is wrong.")
+      }
+    } catch (error) {
+        console.log(error)
     }
-    console.log(responce.status)
+
   };
   return (
     <>
