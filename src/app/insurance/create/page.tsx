@@ -5,7 +5,7 @@ import Form from "@rjsf/material-ui"; // Ensure this is the correct package for 
 import validator from "@rjsf/validator-ajv6";
 import { Box } from "@mui/material";
 import { useRouter } from "next/navigation";
-import { Margarine } from "next/font/google";
+import Navbar from "@/components/Navbar";
 // Define the schema for the form
 // const schema = {
 //   title: "Schema Form",
@@ -188,9 +188,10 @@ function page() {
   return (
     <>
       <div>
-      <div style={{backgroundColor:'#4caf50',padding:'15px'}}>
+      {/* <div style={{backgroundColor:'#4caf50',padding:'15px'}}>
         <h6>Form</h6>
-      </div>
+      </div> */}
+      <Navbar name="Form" button={<></>}/>
     
         <Box style={{
           marginTop: '40px',
