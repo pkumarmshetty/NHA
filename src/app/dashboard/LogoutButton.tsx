@@ -7,10 +7,10 @@ function LogoutButton() {
     <div>
       <Button
         onClick={() => federatedLogout()}
-        color="inherit"
-        variant="outlined"
+        style={{background:'#b2f0a3'}}
+        
       >
-        Sign out of Keycloak
+        Sign out 
       </Button>
     </div>
   );

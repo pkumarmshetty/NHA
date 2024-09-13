@@ -11,22 +11,21 @@ import {
 
 const cardData = [
   {
-    title: "Innovative Housing Solutions",
-    image: "https://via.placeholder.com/300x200?text=Community+Programs",
+    title: "Introduction to Digital Certificates",
+    image: "https://i.ibb.co/tCqTSwS/omg.jpg",
     description:
-      "Explore our cutting-edge approaches to creating affordable and sustainable housing solutions.",
+    "Digital certificates serve as electronic credentials used to establish a secure connection between parties. "
+
   },
   {
-    title: "Community Enrichment Programs",
-    image: "https://via.placeholder.com/300x200?text=Community+Programs",
-    description:
-      "Discover programs designed to enrich and strengthen our communities through various activities and support.",
+    title: "How Digital Certificates Work",
+    image: "https://i.ibb.co/tCqTSwS/omg.jpg",
+    description:"Digital certificates are a key component of public key infrastructure (PKI). They consist of a public key, a private key, and a digital signature from a CA."
   },
   {
-    title: "Essential Housing Support Services",
-    image: "https://via.placeholder.com/300x200?text=Housing+Support",
-    description:
-      "Learn about the essential support services available to assist individuals and families in securing housing.",
+    title: "Benefits of Digital Certificates",
+    image: "https://i.ibb.co/tCqTSwS/omg.jpg",
+    description:"Digital certificates enhance security by providing authentication, data encryption, and digital signatures. "
   },
 ];
 

@@ -12,7 +12,7 @@ function InsuranceButton() {
         color="inherit"
         variant="outlined"
       >
-        Create Insurance
+       Digital Certificate
       </Button>
     </div>
   );

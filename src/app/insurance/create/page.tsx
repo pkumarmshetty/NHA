@@ -5,6 +5,7 @@ import Form from "@rjsf/material-ui"; // Ensure this is the correct package for 
 import validator from "@rjsf/validator-ajv6";
 import { Box } from "@mui/material";
 import { useRouter } from "next/navigation";
+import { Margarine } from "next/font/google";
 // Define the schema for the form
 // const schema = {
 //   title: "Schema Form",
@@ -192,10 +193,13 @@ function page() {
       </div>
     
         <Box style={{
-          margin: "20px",
-          border: "2px solid #ccc", // Adjust border width and color as needed
-          padding: "20px", // Add padding for better spacing
-          borderRadius: "8px", // Optional: Add rounded corners
+          marginTop: '40px',
+          marginLeft: '20%',
+          marginRight: '20%',
+          marginBottom: '80px',
+          border: "2px solid #ccc", 
+          padding: "20px", 
+          borderRadius: "8px", 
         }}>
           <Form
             schema={schema}
